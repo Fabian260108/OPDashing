@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "opdash",
+  "version": "1.0-SNAPSHOT",
+  "name": "OPDash Client",
+  "description": "Client-side mod to detect OPSUCHT exchange messages.",
+  "authors": ["DeinName"],
+  "contact": {},
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "org.CoreBytes.opdash.client.OpdashClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "fabric": "*"
+  }
+}

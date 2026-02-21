@@ -1,0 +1,104 @@
+{
+  "tradeHistory": [
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.771710394125E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.7717106225E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.771710686249E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.77171068698E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamond_block",
+      "amount": 1.0,
+      "timestamp": 1.771710876614E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamond_block",
+      "amount": 1.0,
+      "timestamp": 1.771711283461E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamond_block",
+      "amount": 1.0,
+      "timestamp": 1.77171159463E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.7717117082E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.771711926113E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.771712067667E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1.0,
+      "timestamp": 1.771712074343E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 2.0,
+      "timestamp": 1.771712084249E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 2.0,
+      "timestamp": 1.771712086267E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 10.0,
+      "timestamp": 1.771712090439E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 10.0,
+      "timestamp": 1.771712092875E12
+    },
+    {
+      "shards": 10.04,
+      "item": "diamantblock",
+      "amount": 1,
+      "timestamp": 1771713218878
+    }
+  ],
+  "shardsGoal": 0.0,
+  "totalShards": 150.59999999999994,
+  "totalBuy": 32853.3,
+  "totalSell": 31052.699999999997
+}
