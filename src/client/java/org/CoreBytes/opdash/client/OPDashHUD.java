@@ -34,7 +34,7 @@ public class OPDashHUD {
         this.hudConfig = new OPDashHUDConfig();
 
         moveHUDKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "OPDash.moveHUD",
+                "OPDash moveHUD",
                 InputUtil.Type.KEYSYM,
                 GLFW.GLFW_KEY_H,
                 "OPDash"

@@ -113,4 +113,22 @@ public class ConfigManager {
         configData.put(key, value);
         save();
     }
+
+    @SuppressWarnings("unchecked")
+    public List<Map<String, String>> getCommandButtons() {
+        Object val = configData.get("commandButtons");
+        if (val instanceof List<?> list) {
+            return (List<Map<String,String>>) list;
+        }
+        List<Map<String,String>> newList = new ArrayList<>();
+        configData.put("commandButtons", newList);
+        save();
+        return newList;
+    }
+
+    public void setCommandButtons(List<Map<String, String>> buttons) {
+        configData.put("commandButtons", buttons);
+        save();
+    }
+
 }

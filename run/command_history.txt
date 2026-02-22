@@ -19,3 +19,22 @@
 /opdash reset
 /opdash hud toggle
 /opdash progress
+/reload
+/gamemode spectator
+/gamemode survival
+/gamemode spectator
+/gamemode adventure
+/gamemode spectator
+/opdash shardcalculator diamond_block 10
+/opdash shardcalculator diamond_block 100
+/opdash shardcalculator gräbergemisch 10
+/opdash shardcalculator netherite_ingot 1
+/opdash shardcalculator Graebergemisch 10
+/opdash shardcalculator Holzbundel 10
+/opdash shardcalculator Graebergemisch 10
+/opdash shardcalculator gräbergemisch 1
+/opdash shardcalculator diamond_block 1
+/opdash shardcalculator diamond_block 11
+/opdash shardcalculator graebergemisch 1
+/opdash shardcalculator holzbundel 1
+/opdash shardcalculator graebergemisch 10

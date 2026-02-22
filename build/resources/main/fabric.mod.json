@@ -4,7 +4,7 @@
   "version": "1.0-SNAPSHOT",
   "name": "OPDash Client",
   "description": "Client-side mod to detect OPSUCHT exchange messages.",
-  "authors": ["DeinName"],
+  "authors": ["Fabian260108"],
   "contact": {},
   "license": "MIT",
   "environment": "client",

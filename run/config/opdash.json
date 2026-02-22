@@ -93,12 +93,18 @@
     {
       "shards": 10.04,
       "item": "diamantblock",
-      "amount": 1,
-      "timestamp": 1771713218878
+      "amount": 1.0,
+      "timestamp": 1.771713218878E12
     }
   ],
   "shardsGoal": 0.0,
   "totalShards": 150.59999999999994,
   "totalBuy": 32853.3,
-  "totalSell": 31052.699999999997
+  "totalSell": 31052.699999999997,
+  "commandButtons": [
+    {
+      "title": "test",
+      "command": "test"
+    }
+  ]
 }
