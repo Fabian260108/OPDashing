@@ -50,7 +50,7 @@ public class ModernButton extends net.minecraft.client.gui.widget.ClickableWidge
                     drawY - 3,
                     drawX + scaledWidth + 3,
                     drawY + scaledHeight + 3,
-                    glowAlpha | 0xAA00FF
+                    0x30AA00FF
             );
         }
 
