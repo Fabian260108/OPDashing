@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.OPDashHUD;
 
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.DrawContext;

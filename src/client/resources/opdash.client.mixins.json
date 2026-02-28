@@ -4,6 +4,9 @@
   "package": "org.CoreBytes.opdash.client",
   "compatibilityLevel": "JAVA_21",
   "client": [
+    "mixin.EntityDisplayNameMixin",
+    "mixin.PlayerListHudMixin",
+    "mixin.PlayerListEntryNameMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.Shard;
 
 public class ShardCalculator {
 

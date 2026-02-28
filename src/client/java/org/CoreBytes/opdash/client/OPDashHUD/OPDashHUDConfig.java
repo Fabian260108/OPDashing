@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.OPDashHUD;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

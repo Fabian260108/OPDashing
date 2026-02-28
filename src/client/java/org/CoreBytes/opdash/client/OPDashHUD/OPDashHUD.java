@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.OPDashHUD;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.DrawContext;
@@ -6,6 +6,7 @@ import net.minecraft.client.option.KeyBinding;
 import net.fabricmc.fabric.api.client.keybinding.v1.KeyBindingHelper;
 import net.minecraft.client.render.RenderTickCounter;
 import net.minecraft.client.util.InputUtil;
+import org.CoreBytes.opdash.client.Config.ConfigManager;
 import org.lwjgl.glfw.GLFW;
 
 public class OPDashHUD {

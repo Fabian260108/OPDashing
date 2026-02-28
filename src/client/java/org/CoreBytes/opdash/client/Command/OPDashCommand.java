@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.Command;
 
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.arguments.DoubleArgumentType;
@@ -8,6 +8,9 @@ import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallba
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import org.CoreBytes.opdash.client.Config.ConfigManager;
+import org.CoreBytes.opdash.client.OPDashHUD.OPDashHUD;
+import org.CoreBytes.opdash.client.Shard.ShardCalculator;
 
 import java.util.Map;
 

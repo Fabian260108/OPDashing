@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.CommandsOverlay;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
@@ -6,6 +6,8 @@ import net.minecraft.client.gui.tooltip.Tooltip;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import org.CoreBytes.opdash.client.BlockOverlay.OverlaySettingsScreen;
+import org.CoreBytes.opdash.client.Config.ConfigManager;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -65,6 +67,10 @@ public class CommandButtonScreen extends Screen {
         this.addDrawableChild(ButtonWidget.builder(Text.literal("+"), b ->
                 this.client.setScreen(new AddCommandScreen(this, config))
         ).dimensions(screenWidth - 45, this.height - 45, 35, 35).build());
+
+        this.addDrawableChild(ButtonWidget.builder(Text.literal("Overlay Color"), b ->
+                this.client.setScreen(new OverlaySettingsScreen(this, config))
+        ).dimensions(10, 10, 110, 20).build());
     }
 
     @Override

@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.CommandsOverlay;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.text.Text;

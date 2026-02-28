@@ -1,7 +1,8 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.OPDashHUD;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import org.CoreBytes.opdash.client.Config.ConfigManager;
 
 import java.io.InputStreamReader;
 import java.lang.reflect.Type;

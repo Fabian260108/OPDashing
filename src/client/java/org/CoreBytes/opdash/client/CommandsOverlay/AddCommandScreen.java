@@ -1,49 +1,45 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.CommandsOverlay;
 
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.text.Text;
+import org.CoreBytes.opdash.client.Config.ConfigManager;
 
-public class EditCommandScreen extends Screen {
+import java.util.HashMap;
+
+public class AddCommandScreen extends Screen {
 
     private final CommandButtonScreen parent;
     private final ConfigManager config;
-    private final int buttonIndex;
     private TextFieldWidget titleField;
     private TextFieldWidget commandField;
 
-    public EditCommandScreen(CommandButtonScreen parent, ConfigManager config, int index) {
-        super(Text.literal("Edit Command"));
+    public AddCommandScreen(CommandButtonScreen parent, ConfigManager config) {
+        super(Text.literal("Add Command"));
         this.parent = parent;
         this.config = config;
-        this.buttonIndex = index;
     }
 
     @Override
     protected void init() {
         this.clearChildren();
 
-        var buttonMap = config.getCommandButtons().get(buttonIndex);
-
         // Titel-Feld (max 128 Zeichen)
-        titleField = new TextFieldWidget(this.textRenderer, width / 2 - 100, 50, 200, 20, Text.literal(""));
+        titleField = new TextFieldWidget(this.textRenderer, width / 2 - 100, 50, 200, 20, Text.literal("Titel"));
         titleField.setMaxLength(128);
 
         // Command/Chat-Feld (max 1024 Zeichen)
-        commandField = new TextFieldWidget(this.textRenderer, width / 2 - 100, 90, 200, 20, Text.literal(""));
+        commandField = new TextFieldWidget(this.textRenderer, width / 2 - 100, 90, 200, 20, Text.literal("Command / Nachricht"));
         commandField.setMaxLength(1024);
-
-        titleField.setText(buttonMap.get("title"));
-        commandField.setText(buttonMap.get("command"));
 
         this.addSelectableChild(titleField);
         this.addSelectableChild(commandField);
         titleField.setFocused(true);
 
         // Speichern Button
-        this.addDrawableChild(ButtonWidget.builder(Text.literal("Speichern"), b -> save())
+        this.addDrawableChild(ButtonWidget.builder(Text.literal("Speichern"), b -> saveCommand())
                 .dimensions(width / 2 - 80, 130, 70, 20).build());
 
         // Abbrechen Button
@@ -52,15 +48,18 @@ public class EditCommandScreen extends Screen {
                 .dimensions(width / 2 + 10, 130, 70, 20).build());
     }
 
-    private void save() {
+    private void saveCommand() {
         String title = titleField.getText();
         String command = commandField.getText();
         if (title.isEmpty() || command.isEmpty()) return;
 
-        var map = config.getCommandButtons().get(buttonIndex);
+        HashMap<String, String> map = new HashMap<>();
         map.put("title", title);
         map.put("command", command);
-        config.setCommandButtons(config.getCommandButtons());
+
+        var buttons = config.getCommandButtons();
+        buttons.add(map);
+        config.setCommandButtons(buttons);
 
         parent.refreshButtons();
         this.client.setScreen(parent);

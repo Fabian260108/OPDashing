@@ -1,4 +1,4 @@
-package org.CoreBytes.opdash.client;
+package org.CoreBytes.opdash.client.Shard;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
